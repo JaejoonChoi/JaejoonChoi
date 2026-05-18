@@ -1,7 +1,6 @@
 
 **Hello! Thank you for visiting my GitHub.** <br/><br/><br/>
 **E-mail:** cjj1222@khu.ac.kr <br/><br/>
-**Home Page:** https://jaejunchoe.github.io/ <br/><br/>
 **Google Scholar:** https://scholar.google.com/citations?user=SNXZCcgAAAAJ&hl=ko <br/><br/>
 **Experience**
 - `Mar.2025 - Present`, M.S. Student, [AIMS Lab](https://sites.google.com/khu.ac.kr/aims/home?authuser=0), Department of Industrial and Management Systems Engineering, Kyung Hee University, Yongin, Korea
