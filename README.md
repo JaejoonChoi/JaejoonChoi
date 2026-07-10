@@ -37,13 +37,6 @@
 ## About Me
 - 🎓 M.S. Graduate Student in Industrial and Management Systems Engineering at Kyung Hee University (2025.03-Current).
 - 🎓 B.S. Department of Industrial Engineering & Covergence Major., Major of Smart Factory at Kumoh National Institute of Technology (2019.03-2025.02).
-- 
-
-- <summary>🎓 M.S. Graduate Student in Industrial and Management Systems Engineering at Kyung Hee University (2025.03-Current).</summary>
-<div markdown="1">
-
-Member of the Artificial Intelligence & Management Science Lab (AIMS Lab).
-
 </div>
 </details>
 
