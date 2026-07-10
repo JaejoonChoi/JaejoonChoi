@@ -1,4 +1,3 @@
-
 **Hello! Thank you for visiting my GitHub.** <br/><br/><br/>
 **E-mail:** cjj1222@khu.ac.kr <br/><br/>
 **Google Scholar:** https://scholar.google.com/citations?user=SNXZCcgAAAAJ&hl=ko <br/><br/>
@@ -7,6 +6,10 @@
 - `Mar.2024 - Feb.2025`, Undergraduate Research Assistant Student, [HAIDS Lab](https://sites.google.com/view/ids-kit/home), Department of Industrial Engineering, Kumoh National Institute of Technology, Gumi, Korea
 - `Apr.2023 - Feb.2024`, Undergraduate Research Student, [Kumoh National Institute of Technology Industry-academic Cooperation Foundation](http://sian3.adbank.co.kr/kit_iacf/main/sub01/sub01_03.html), Kumoh National Institute of Technology, Gumi, Korea   
 ----------
+
+<a href="[https://연결하고_싶은_웹사이트_주소.com](https://jaejoonchoi.github.io//)">
+  <img width="2500" height="3750" alt="homepage_profile" src="https://github.com/user-attachments/assets/4985be79-fc24-468c-8821-691eb9274449" />
+</a>
 
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jaejunchoe&show_icons=true&theme=dracula)
