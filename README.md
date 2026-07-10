@@ -47,6 +47,10 @@ Member of the Artificial Intelligence & Management Science Lab (AIMS Lab).
 </div>
 </details>
 
+  <div align="center">
+    <img src="./assets/portfolio-wordcloud.svg" width="100%" alt="Portfolio word cloud" />
+  </div>
+
 ---
 
 ## Experience
