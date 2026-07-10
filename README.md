@@ -37,7 +37,7 @@
 | Topic | Category | Title | Keywords |
 | :-- | :-- | :-- | :-- |
 | 📉Industrial Power Consumption Prediction | Journal | [Designing a data-driven energy management service: A case study of South Korea's national industrial complex (IEEE Access)](https://ieeexplore.ieee.org/document/10820349) | Energey Management, Time-Series Analysis, LSTM, Service Information Design |
-| 👁️Manufacturing Image Data Defect Classification & Segmentation | Conference | [Feature-Wise Linear Modulation-based conditional segmentation model for wafer bin map classification](https://jaejoonchoi.github.io//publication/2025-11-06-presentation-1) | Mixed-type Wafer Bin Map Defects Semantic Segmentation, Conditional Generation, Disentanglement of Mixed Defects, Feature-wise Linear Modulation (FiLM) |
+| 👁️Manufacturing Image Data Defect Classification & Segmentation | Conference | [Conditional Generation of Overlapping Mixed-type Wafer Bin Map Defects via Feature-wise Linear Modulation](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6532561) | Mixed-type Wafer Bin Map Defects Semantic Segmentation, Conditional Generation, Disentanglement of Mixed Defects, Feature-wise Linear Modulation (FiLM) |
 | ֎🇦🇮 LLM | Data Analysis Competition | RAG-FSR(Retrieval Augmented Generation-Food Science Research): A Language Model for Classifying Food Research Journals using Natural Language Processing and Retrieval-Augmented Generation | RAG, LLM, Food Research & Journal Paper, Semantic Search |
 
 ---
