@@ -191,6 +191,45 @@ KOREAN_STOPWORDS = {
 
 PALETTE = ["#0f4c81", "#2f80ed", "#27ae60", "#f2994a", "#eb5757", "#6c5ce7"]
 
+DOMAIN_WHITELIST = {
+}
+
+PHRASES = {
+    "ai agent": 40,
+    "ai agents": 40,
+    "llm": 40,
+    "llms": 40,
+    "large language model": 20,
+    "large language models": 20,
+    "defect detection": 8,
+    "anomaly detection": 8,
+    "data mining": 8,
+    "wafer defect": 7,
+    "wafer bin map": 7,
+    "semantic segmentation": 7,
+    "vision transformer": 7,
+    "retrieval augmented generation": 7,
+    "recommendation systems": 6,
+    "sentiment aware": 6,
+    "rating recalibration": 6,
+    "convex optimization": 6,
+    "fuzzing framework": 6,
+    "adaptive mutation": 6,
+    "curriculum learning": 6,
+    "time series": 6,
+    "ensemble methods": 6,
+    "energy management": 6,
+    "large language models": 6,
+}
+
+PRIORITY_WEIGHTS = {
+    "ai_agent": 400,
+    "llm": 400,
+    "data_mining": 400,
+    "anomaly_detection": 400,
+    "defect_detection": 400,
+}
+
 
 class TextExtractor(HTMLParser):
     def __init__(self) -> None:
@@ -238,12 +277,17 @@ def normalize_token(token: str) -> str | None:
 
 
 def collect_tokens(text: str) -> Counter[str]:
-    raw_tokens = re.findall(r"[A-Za-z][A-Za-z0-9\-\+]+|[가-힣]{2,}", text)
+    return Counter()
+
+
+def collect_phrases(text: str) -> Counter[str]:
+    normalized = re.sub(r"[^a-z0-9\s\-]", " ", text.lower())
+    normalized = re.sub(r"\s+", " ", normalized)
     counter: Counter[str] = Counter()
-    for raw in raw_tokens:
-        token = normalize_token(raw)
-        if token:
-            counter[token] += 1
+    for phrase, weight in PHRASES.items():
+        count = normalized.count(phrase)
+        if count:
+            counter[phrase.replace(" ", "_")] += count * weight
     return counter
 
 
@@ -302,11 +346,12 @@ def build_svg(words: list[tuple[str, int]], output_path: Path) -> None:
 
             color = PALETTE[idx % len(PALETTE)]
             weight = 700 if font_size >= 48 else 600
+            display_word = word.replace("_", " ")
             elements.append(
                 f'<text x="{x:.1f}" y="{y:.1f}" '
                 f'font-size="{font_size}" font-weight="{weight}" '
                 f'fill="{color}" text-anchor="middle" dominant-baseline="middle">'
-                f"{html.escape(word)}</text>"
+                f"{html.escape(display_word)}</text>"
             )
             placed_boxes.append(box)
             placed = True
@@ -331,7 +376,10 @@ def main() -> None:
     for url in URLS:
         extractor = TextExtractor()
         extractor.feed(fetch(url))
-        combined.update(collect_tokens(extractor.text()))
+        text = extractor.text()
+        combined.update(collect_phrases(text))
+
+    combined.update(PRIORITY_WEIGHTS)
 
     top_words = combined.most_common(55)
     output = Path("assets/portfolio-wordcloud.svg")
