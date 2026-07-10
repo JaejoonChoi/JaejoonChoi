@@ -307,6 +307,21 @@ def overlaps(box, placed) -> bool:
     return False
 
 
+def prettify_word(word: str) -> str:
+    word = word.replace("_", " ")
+    custom = {
+        "ai agent": "AI Agent",
+        "llm": "LLM",
+        "llms": "LLMs",
+        "rag": "RAG",
+        "nlp": "NLP",
+    }
+    lowered = word.lower()
+    if lowered in custom:
+        return custom[lowered]
+    return " ".join(part.capitalize() for part in word.split())
+
+
 def build_svg(words: list[tuple[str, int]], output_path: Path) -> None:
     width = 1200
     height = 700
@@ -346,7 +361,7 @@ def build_svg(words: list[tuple[str, int]], output_path: Path) -> None:
 
             color = PALETTE[idx % len(PALETTE)]
             weight = 700 if font_size >= 48 else 600
-            display_word = word.replace("_", " ")
+            display_word = prettify_word(word)
             elements.append(
                 f'<text x="{x:.1f}" y="{y:.1f}" '
                 f'font-size="{font_size}" font-weight="{weight}" '
@@ -360,10 +375,8 @@ def build_svg(words: list[tuple[str, int]], output_path: Path) -> None:
         if not placed:
             continue
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="Word cloud from Jaejoon Choi portfolio">
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="Research keyword word cloud">
   <rect width="100%" height="100%" fill="#f8fbff" rx="24" ry="24" />
-  <text x="50%" y="56" text-anchor="middle" font-size="28" font-weight="700" fill="#12324a">Portfolio Word Cloud</text>
-  <text x="50%" y="88" text-anchor="middle" font-size="15" fill="#4f6b81">Generated from jaejoonchoi.github.io content</text>
   {"".join(elements)}
 </svg>
 """
