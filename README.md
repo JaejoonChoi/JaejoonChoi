@@ -7,7 +7,7 @@
 - `Apr.2023 - Feb.2024`, Undergraduate Research Student, [Kumoh National Institute of Technology Industry-academic Cooperation Foundation](http://sian3.adbank.co.kr/kit_iacf/main/sub01/sub01_03.html), Kumoh National Institute of Technology, Gumi, Korea   
 ----------
 
-# Homrepage (Press on the image below)
+# Homepage (Press on the image below)
 
 <a href="https://jaejoonchoi.github.io//">
   <img width="250" height="375" alt="homepage_profile" src="https://github.com/user-attachments/assets/4985be79-fc24-468c-8821-691eb9274449" />
