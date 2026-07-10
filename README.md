@@ -20,7 +20,7 @@
 # Jaejoon Choi
 
 <p>
-  <img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+KR&size=24&duration=3000&pause=1000&color=2F80ED&center=true&vCenter=true&width=900&lines=M.S.+Student+%40+Kyung+Hee+University;AIMS+Lab+%7C+Industrial+and+Management+Systems+Engineering;Defect+Detection+%7C+Anomaly+Detection+%7C+Data+Mining" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+KR&size=24&duration=3000&pause=1000&color=2F80ED&center=true&vCenter=true&width=900&lines=Defect+%26+Anomaly+Detection+%7C+AI+Agent+%7C+Data+Mining;Department+of+Industrial+and+Management+Systems+Engineering" alt="Typing SVG" />
 </p>
 
 <p>
@@ -35,11 +35,17 @@
 ---
 
 ## About Me
+- 🎓 M.S. Graduate Student in Industrial and Management Systems Engineering at Kyung Hee University (2025.03-Current).
+- 🎓 B.S. Department of Industrial Engineering & Covergence Major., Major of Smart Factory at Kumoh National Institute of Technology (2019.03-2025.02).
+- 
 
-- M.S. student in Industrial and Management Systems Engineering at Kyung Hee University.
-- Member of the Artificial Intelligence & Management Science Lab (AIMS Lab).
-- Interested in `Defect Detection`, `Anomaly Detection`, and `Data Mining`.
-- Building research and practical projects across AI, optimization, and industrial data analysis.
+- <summary>🎓 M.S. Graduate Student in Industrial and Management Systems Engineering at Kyung Hee University (2025.03-Current).</summary>
+<div markdown="1">
+
+Member of the Artificial Intelligence & Management Science Lab (AIMS Lab).
+
+</div>
+</details>
 
 ---
 
