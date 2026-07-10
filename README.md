@@ -7,12 +7,13 @@
 - `Apr.2023 - Feb.2024`, Undergraduate Research Student, [Kumoh National Institute of Technology Industry-academic Cooperation Foundation](http://sian3.adbank.co.kr/kit_iacf/main/sub01/sub01_03.html), Kumoh National Institute of Technology, Gumi, Korea   
 ----------
 
+# Homrepage (Press on the image below)
+
 <a href="https://jaejoonchoi.github.io//">
-  <img width="2500" height="3750" alt="homepage_profile" src="https://github.com/user-attachments/assets/4985be79-fc24-468c-8821-691eb9274449" />
+  <img width="250" height="375" alt="homepage_profile" src="https://github.com/user-attachments/assets/4985be79-fc24-468c-8821-691eb9274449" />
 </a>
 
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jaejunchoe&show_icons=true&theme=dracula)
 
 
 
